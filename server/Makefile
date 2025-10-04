@@ -1,6 +1,6 @@
 
-main: src/main.c
-	gcc -o main src/main.c -lws2_32
+main: src/main.c src/server.c src/battleship.c
+	gcc -o main src/main.c src/server.c src/battleship.c -Iinclude -lws2_32
 
 run: main
 	./main.exe
