@@ -1,7 +1,15 @@
 #include <stdio.h>
 #include "server.h"
+#include "battleship.h"
 
 int main(int argc, char **argv) {
+
+    struct Board board;
+
+    init_board(&board);
+    display(&board);
+
+    return 0;
 
     if (init_winsock() != 0)
         return 1;
